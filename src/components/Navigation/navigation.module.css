@@ -1,0 +1,18 @@
+.sidebar {
+  container-type: inline-size;
+  container-name: sidebar;
+}
+
+.icon-title {
+  display: block;
+}
+
+.icon-button {
+  justify-content: flex-start;
+}
+
+@container sidebar (max-width: 9rem) {
+  .icon-title {
+    display: none;
+  }
+}
