@@ -16,11 +16,10 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      
       <body className={font.className}>
         <div className='flex flex-1'>
           <Sidebar routes={[Routes.HOME, Routes.PROFILE, Routes.SIGN_OUT]} />
-          <div className='flex flex-col bg-slate-300 h-screen w-screen'>
+          <div className='flex flex-col bg-slate-300 w-screen pb-20 md:pb-0'>
             <Header />
             {children}
           </div>

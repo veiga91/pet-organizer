@@ -10,7 +10,7 @@ export interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
 }
 
 const styles = {
-    [ButtonVariant.OUTLINED]: 'shadow-md bg-white shadow-purple-100 rounded-lg',
+    [ButtonVariant.OUTLINED]: 'shadow-md bg-white shadow-purple-100 rounded-lg hover:bg-purple-100',
     [ButtonVariant.TEXT]: 'bg-transparent items-center text-sm rounded-lg'
 }
 

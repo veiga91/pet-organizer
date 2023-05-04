@@ -5,8 +5,8 @@ import signOut from './signOut.svg'
 import { Routes } from '../routes'
 import Image from 'next/image'
 import { ReactElement } from 'react'
-import { Button, ButtonVariant } from '../Button'
 import classes from './navigation.module.css'
+import Link from 'next/link'
 
 type Icons = { [key in Routes]?: { alt: string, src: any, title: string } }
 
@@ -21,10 +21,10 @@ const ICONS: Icons = {
 function NavigationIcon ({ route }: { route: Routes }): ReactElement {
   return (
     <li>
-      <Button variant={ButtonVariant.TEXT} className={`mx-0 flex flex-col md:flex-row flex-1 md:items-center ${classes["icon-button"]}`}>
+      <Link href={route} aria-label={ICONS[route]?.title} className={`ml-2 my-2 flex flex-col md:flex-row flex-1 md:items-center ${classes["icon-button"]}`}>
         <Image className='max-h-[1.5rem] max-w-[1.5rem]' src={ICONS[route]?.src} alt={ICONS[route]?.alt || ''} />
         <span className={`md:relative md:ml-2 text-xs md:text-lg ${classes["icon-title"]} text-stone-500`}>{ICONS[route]?.title}</span>
-      </Button>
+      </Link>
     </li>
   )
 }
