@@ -8,11 +8,22 @@
 }
 
 .icon-button {
+  margin-left: 0.5rem;
+}
+
+.link-wrapper {
   justify-content: flex-start;
 }
 
 @container sidebar (max-width: 9rem) {
   .icon-title {
     display: none;
+  }
+
+  .link-wrapper {
+    justify-content: center;
+  }
+  .icon-button {
+    margin-left: 0;
   }
 }
