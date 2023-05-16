@@ -1,5 +1,5 @@
 import Image from 'next/image'
-import TypoHeaders, { HeaderTags } from './typography/TypoHeaders'
+import { H2 } from './Typography'
 import Link from 'next/link'
 import { Routes } from './routes'
 
@@ -7,6 +7,7 @@ interface CardProps {
   name: string;
   id: string
 }
+
 
 function Card ({ name, id }: CardProps) {
   return (
@@ -17,7 +18,7 @@ function Card ({ name, id }: CardProps) {
           alt={name} className="flex flex-1 max-h-32 md:max-h-36 rounded"
         />
         
-        <TypoHeaders headertag={HeaderTags.H2}>{name}</TypoHeaders>
+        <H2>{name}</H2>
         
         <ul className='flex flex-1 w-full flex-col px-1 mt-4'>
           <li id='groom' aria-label='Last grooming' role='img' className='flex items-center border-b-[1px] border-purple-50 mb-2 text-sm'>
