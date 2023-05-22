@@ -1,7 +1,6 @@
 lockfileVersion: 5.4
 
 specifiers:
-  '@prisma/client': 4.13.0
   '@types/node': 18.16.0
   '@types/react': 18.0.38
   '@types/react-dom': 18.0.11
@@ -17,7 +16,6 @@ specifiers:
   typescript: 5.0.4
 
 dependencies:
-  '@prisma/client': 4.13.0_prisma@4.13.0
   '@types/node': 18.16.0
   '@types/react': 18.0.38
   '@types/react-dom': 18.0.11
@@ -258,27 +256,10 @@ packages:
       tslib: 2.5.0
     dev: false
 
-  /@prisma/client/4.13.0_prisma@4.13.0:
-    resolution: {integrity: sha512-YaiiICcRB2hatxsbnfB66uWXjcRw3jsZdlAVxmx0cFcTc/Ad/sKdHCcWSnqyDX47vAewkjRFwiLwrOUjswVvmA==}
-    engines: {node: '>=14.17'}
-    requiresBuild: true
-    peerDependencies:
-      prisma: '*'
-    peerDependenciesMeta:
-      prisma:
-        optional: true
-    dependencies:
-      '@prisma/engines-version': 4.13.0-50.1e7af066ee9cb95cf3a403c78d9aab3e6b04f37a
-      prisma: 4.13.0
-    dev: false
-
-  /@prisma/engines-version/4.13.0-50.1e7af066ee9cb95cf3a403c78d9aab3e6b04f37a:
-    resolution: {integrity: sha512-fsQlbkhPJf08JOzKoyoD9atdUijuGBekwoOPZC3YOygXEml1MTtgXVpnUNchQlRSY82OQ6pSGQ9PxUe4arcSLQ==}
-    dev: false
-
   /@prisma/engines/4.13.0:
     resolution: {integrity: sha512-HrniowHRZXHuGT9XRgoXEaP2gJLXM5RMoItaY2PkjvuZ+iHc0Zjbm/302MB8YsPdWozAPHHn+jpFEcEn71OgPw==}
     requiresBuild: true
+    dev: true
 
   /@rushstack/eslint-patch/1.2.0:
     resolution: {integrity: sha512-sXo/qW2/pAcmT43VoRKOJbDOfV3cYpq3szSVfIThQXNt+E4DfKj361vaAt3c88U5tPUxzEswam7GW48PJqtKAg==}
@@ -2069,6 +2050,7 @@ packages:
     requiresBuild: true
     dependencies:
       '@prisma/engines': 4.13.0
+    dev: true
 
   /prop-types/15.8.1:
     resolution: {integrity: sha512-oj87CgZICdulUohogVAR7AjlC0327U4el4L6eAvOqCeudMDVU0NThNaV+b9Df4dXgSP1gXMTnPdhfe/2qDH5cg==}
