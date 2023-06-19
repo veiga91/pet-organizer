@@ -1,5 +1,4 @@
 packages:
-- 'ui-library'
 - 'theme'
 - 'web'
 - 'api'

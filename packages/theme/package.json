@@ -1,0 +1,9 @@
+{
+  "name": "theme",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {},
+  "dependencies": {
+    "typescript": "5.0.4"
+  }
+}

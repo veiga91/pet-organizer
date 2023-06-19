@@ -7,7 +7,7 @@
   display: block;
 }
 
-.icon-button {
+.icon-button-wrapper {
   margin-left: 0.5rem;
 }
 
@@ -23,7 +23,7 @@
   .link-wrapper {
     justify-content: center;
   }
-  .icon-button {
+  .icon-button-wrapper {
     margin-left: 0;
   }
 }
